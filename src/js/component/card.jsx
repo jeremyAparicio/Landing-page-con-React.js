@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card =({titulo,descripcion,img,color}) =>{
 
-return <div className="card" style={{"width": "25%"}}>
+return <div className="card" style={{"width": "25%","margin":"1%"}}>
   <img src={img} className="card-img-top" alt="..." height={200}/>
   <div className="card-body d-flex flex-column">
     <div className="title">
@@ -11,7 +11,7 @@ return <div className="card" style={{"width": "25%"}}>
     <div className="description" style={{"margin-bottom": "5%"}}>
     <p className="card-text">{descripcion}</p>
     </div>
-    <div className="button mt-auto">
+    <div className="button mt-auto" style={{"textAlign":"center"}}>
     <a href="#" className="btn btn-primary " style={{"backgroundColor":colores(),"border-color":"white"}}>{color}</a>
     </div>
   </div>

@@ -43,7 +43,7 @@ const Home = () => {
 	return (
 		<div className="container-fluid">
 			<Navbar/>
-			<div className="container my-5">
+			<div className="container my-5" style={{"padding-top":"1%"}}>
 				{banner.map((objeto, posicion)=>{
 						return <Jumbotron titulo = {objeto.titulo}
 						parrafo = {objeto.parrafo}
